@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+<title>The Plants and Flowers Garden and Resort</title>
+<link rel="stylesheet" type="text/css" href="../One_Page_WEBSITE_UPDATE/CSS/basic_style.css"/>
+<script src="../One_Page_WEBSITE_UPDATE/JS/one_page_site.js"> defer</script>
+</head>
+<body>
+
+   <!-- NAV -->
+    <div>
+        <div>
+        <ul>
+          <a href="#HOME" id="link"><li>HOME</li></a>
+           <a href="#gallery"><li>GALLERY</li></a>
+            <a href="#contact"><li>RESERVATIONS</li></a>
+   </ul>
+   </div>
+   </div>
+
+   <!-- END NAV-->
+
+  <!--HOME -->
+<div id="home">
+    <div>
+       <div>
+      <span>The Plants & Flowers Garden</span>
+    </div>
+  </div>
+</div>
+
+<!-- END HOME -->
+
+<!-- GALLERY-->
+<section>
+   <div id="gallery">
+    <h1>Gallery</h1>
+   <div>
+
+    <!--PHOTO-CONTAINER 1 -->
+
+<div>
+    <div>
+    <img src="../One_Page_WEBSITE_UPDATE/Images/plants/plant1-small.png" alt="Galaxy photo">
+       <div>
+       <h3>Click to Enlarge</h3>
+      <P>We have several plants and different types of fresh and beautiful flowers daily, book your appointment today!</p>
+   </div>
+</div>
+</div>
+<!--END PHOTO-CONTAINER 1 -->
+
+ <!--PHOTO-CONTAINER 2 -->
+
+<div>
+    <div>
+    <img src="../One_Page_WEBSITE_UPDATE/Images/plants/plant2-small.png" alt="All galaxy photos in one image">
+       <div>
+       <h3>Click to Enlarge</h3>
+      <P>We have several plants and different types of fresh and beautiful flowers daily, book your appointment today!</p>
+   </div>
+</div>
+</div>
+<!--END PHOTO-CONTAINER 2 -->
+
+<!--PHOTO-CONTAINER 3 -->
+
+<div>
+    <div>
+    <img src="../One_Page_WEBSITE_UPDATE/Images/plants/plant3-small.png" alt="one galaxy photo">
+       <div>
+       <h3>Click to Enlarge</h3>
+      <P>We have several plants and different types of fresh and beautiful flowers daily, book your appointment today!</p>
+   </div>
+</div>
+</div>
+<!--END PHOTO-CONTAINER 3 -->
+
+<!--PHOTO-CONTAINER 4 -->
+
+<div>
+    <div>
+    <img src="../One_Page_WEBSITE_UPDATE/Images/plants/plant4-small.png" alt="Three planets photo">
+       <div>
+       <h3>Click to Enlarge</h3>
+      <P>We have several plants and different types of fresh and beautiful flowers daily, book your appointment today!</p>
+   </div>
+</div>
+</div>
+<!--END PHOTO-CONTAINER 4 -->
+
+<!-- Images used to open the lightbox -->
+<div class="row">
+   <div class="column">
+     <img src="../One_Page_WEBSITE_UPDATE/Images/plants/plant1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+   </div>
+   <div class="column">
+     <img src="../One_Page_WEBSITE_UPDATE/Images/plants/plant2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+   </div>
+   <div class="column">
+     <img src="../One_Page_WEBSITE_UPDATE/Images/plants/plant3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+   </div>
+   <div class="column">
+     <img src="../One_Page_WEBSITE_UPDATE/Images/plants/plant4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+   </div>
+ </div>
+ 
+ <!-- The Modal/Lightbox -->
+ <div id="myModal" class="modal">
+   <span class="close cursor" onclick="closeModal()">&times;</span>
+   <div class="modal-content">
+ 
+     <div class="mySlides">
+       <div class="numbertext">1 / 4</div>
+       <img src="../One_Page_WEBSITE_UPDATE/Images/plants/plant1.png" style="width:100%">
+     </div>
+ 
+     <div class="mySlides">
+       <div class="numbertext">2 / 4</div>
+       <img src="../One_Page_WEBSITE_UPDATE/Images/plants/plant2.png" style="width:100%">
+     </div>
+ 
+     <div class="mySlides">
+       <div class="numbertext">3 / 4</div>
+       <img src="../One_Page_WEBSITE_UPDATE/Images/plants/plant3.png" style="width:100%">
+     </div>
+ 
+     <div class="mySlides">
+       <div class="numbertext">4 / 4</div>
+       <img src="../One_Page_WEBSITE_UPDATE/Images/plants/plant4.png" style="width:100%">
+     </div>
+ 
+     <!-- Next/previous controls -->
+     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+     <a class="next" onclick="plusSlides(1)">&#10095;</a>
+ 
+     <!-- Caption text -->
+     <div class="caption-container">
+       <p id="caption"></p>
+     </div>
+ 
+     <!-- Thumbnail image controls -->
+     <div class="column">
+       <img class="demo" src="../One_Page_WEBSITE_UPDATE/Images/plants/plant1-small.png" onclick="currentSlide(1)" alt="Nature">
+     </div>
+ 
+     <div class="column">
+       <img class="demo" src="../One_Page_WEBSITE_UPDATE/Images/plants/plant2-small.png" onclick="currentSlide(2)" alt="Snow">
+     </div>
+ 
+     <div class="column">
+       <img class="demo" src="../One_Page_WEBSITE_UPDATE/Images/plants/plant3-small.png" onclick="currentSlide(3)" alt="Mountains">
+     </div>
+ 
+     <div class="column">
+       <img class="demo" src="../One_Page_WEBSITE_UPDATE/Images/plants/plant4-small.png" onclick="currentSlide(4)" alt="Lights">
+     </div>
+   </div>
+ </div>
+
+
+</div>
+</div>
+</section>
+
+<!-- END GALLERY -->
+<!-- RSVP -->
+
+<section>
+    <div id="contact">
+      <div>
+        <h1>Reservations</h1>
+       <div>
+        <h2><span>Your adventure is just around the corner.</span>
+        <br/>Book your appointment today!
+   </h2>
+<p>
+  Please provide us with your basic contact information.
+</p>
+   <div>
+    <form action="" method="post">
+    <input class="rsvp" type="text" value="">
+    <input class="rsvp" type="text" value="">
+    <input class="rsvp" type="text" value="">
+    <input class="rsvp" type="text" value="">
+   <div class="form-spacer">
+       <label class="terms">Terms and conditions</label>
+   </div>
+   <div>
+        <input type="submit" value="Submit">
+   </div>
+</form>
+  </div>
+  </div>
+  </div>
+</div>
+</section>
+ <!--RSVP-->
+ <!--FOOTER -->
+<div id="footer">
+     www.theflowertation.com &nbsp; &nbsp;  &copy; 2023
+</div>
+
+<!--END FOOTER-->
+
+</body>
+</html>
+     

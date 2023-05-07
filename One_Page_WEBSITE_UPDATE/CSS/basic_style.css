@@ -1,0 +1,234 @@
+body{
+    background-color: #fff;
+}
+
+h1{
+    color: rgba(8, 141, 165, 1);
+    margin-left: 100px;
+    text-shadow: 1px .5px 4px rgba(0, 0, 0, 0.6);
+}
+
+.container{
+    width: 450px;
+    height: 450px;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    border-radius: 5%;
+}
+/*---------------------------------------------
+SELECT ALL SQUARES IN THE ARRAY
+---------------------------------------------*/
+.container .squares:nth-child(-n+4){
+    background-image: url("../Images/Icons/smileyface2.png");
+    color: #fff;
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 25%;
+    cursor: pointer;
+    transition: transform .5s ease-in-out;
+}
+
+/*--------------------------------------------
+   SELECT ALL SQUARES PARAGRAPHS IN THE ARRAY
+   -------------------------------------------*/
+   .squares:nth-child(-n+4) P{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+    text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.8);
+   }
+   /*-------------------------------------
+   INDIVIDUALLY SELECT A SQUARE IN THE ARRAY
+   --------------------------------------*/
+   .squares:nth-child(1){
+    background: #4240ff;
+   }
+
+   .squares:nth-child(2){
+    background: #ab3fdd;
+   }
+
+   .squares:nth-child(3){
+    background: #ae163e;
+   }
+.squares:nth-child(4){
+    background: #00b200;
+
+}
+
+/*------------------------------------------
+HOVER, TRANSLATE & TRANSFORM EFFECTS
+-------------------------------------------*/
+.container .squares:nth-child(-n+4):hover{
+    background-image: url("../Images/Icons/smileyface1.png");
+    transform: scale(.5);
+    animation-name: race;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(2.5, .2, .3, 2);
+
+}
+
+.squares:nth-child(1):hover{
+    background: #13b4ff;
+}
+
+.squares:nth-child(2):hover{
+    background: #d861af;
+}
+.squares:nth-child(3):hover{
+    background: #81205f;
+}
+.squares:nth-child(4):hover{
+    background: #77b800;
+}
+
+/*---------------------------------------
+ANIMATION EFFECT
+---------------------------------------*/
+@keyframes race {
+    0%, 100% {
+        transform: translateY(0px);
+        background-image: url("../Images/Icons/smileyface1.png");
+    }
+    50% {
+        transform: translateY(300px);
+    }
+}
+form input[type="text"]{
+    width: 20%;
+    margin: 5px;
+    border: 2px solid peachpuff;
+    border-radius: 7px;
+}
+
+.row > .column {
+    padding: 0 8px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Create four equal columns that floats next to eachother */
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Hide the slides by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Caption text */
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  img.demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
