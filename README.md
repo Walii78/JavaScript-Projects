@@ -1,5 +1,5 @@
 # JavaScript-Projects
-One_Page_Website_Update-Project
+One_Page_Website_Update-Project:
 Calculator_Project
-Pizza Project
-TicTacToe Project
+Pizza_Website Project
+TicTacToe_Game_Project
